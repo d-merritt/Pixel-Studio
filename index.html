@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="path/to/dom-to-image.min.js"></script>
+    <div id="titleblock">
+      <title>Pixel Studio</title>
+      <script
+        src="https://kit.fontawesome.com/88f7d00718.js"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </head>
+  <body>
+    <section id="title">
+      <svg
+        id="colorpalette"
+        xmlns="http://www.w3.org/2000/svg"
+        height="48"
+        width="48"
+      >
+        <path
+          d="M24 44q-4.1 0-7.75-1.575-3.65-1.575-6.375-4.3-2.725-2.725-4.3-6.375Q4 28.1 4 24q0-4.25 1.6-7.9 1.6-3.65 4.375-6.35 2.775-2.7 6.5-4.225Q20.2 4 24.45 4q3.95 0 7.5 1.325T38.175 9q2.675 2.35 4.25 5.575Q44 17.8 44 21.65q0 5.4-3.15 8.525T32.5 33.3h-3.75q-.9 0-1.55.7t-.65 1.55q0 1.35.725 2.3.725.95.725 2.2 0 1.9-1.05 2.925T24 44Zm0-20Zm-11.65 1.3q1 0 1.75-.75t.75-1.75q0-1-.75-1.75t-1.75-.75q-1 0-1.75.75t-.75 1.75q0 1 .75 1.75t1.75.75Zm6.3-8.5q1 0 1.75-.75t.75-1.75q0-1-.75-1.75t-1.75-.75q-1 0-1.75.75t-.75 1.75q0 1 .75 1.75t1.75.75Zm10.7 0q1 0 1.75-.75t.75-1.75q0-1-.75-1.75t-1.75-.75q-1 0-1.75.75t-.75 1.75q0 1 .75 1.75t1.75.75Zm6.55 8.5q1 0 1.75-.75t.75-1.75q0-1-.75-1.75t-1.75-.75q-1 0-1.75.75t-.75 1.75q0 1 .75 1.75t1.75.75ZM24 41q.55 0 .775-.225.225-.225.225-.725 0-.7-.725-1.3-.725-.6-.725-2.65 0-2.3 1.5-4.05t3.8-1.75h3.65q3.8 0 6.15-2.225Q41 25.85 41 21.65q0-6.6-5-10.625T24.45 7q-7.3 0-12.375 4.925T7 24q0 7.05 4.975 12.025Q16.95 41 24 41Z"
+        />
+      </svg>
+      <h1 class="title">Pixel Studio</h1>
+    </section>
+
+    <section id="colorcontainer">
+      <img src="./images/colorpalette.png" />
+      <div class="grid-container"></div>
+    </section>
+    <section class="navigation">
+      <label for="colorpicker" id="colorpicker1">Color: </label>
+      <input type="color" id="colorpicker" name="colorpicker" value="#b0d0e0" />
+      <label for="gridnum" id="gridnumtext">Grid: </label>
+      <input type="number" id="gridnum" name="gridnum" value="40" />
+      <label for="btn" id="btntext">Clear:</label>
+      <button id="btn"><i class="fa-solid fa-eraser fa-3x"></i></button>
+
+      <label for="artpics" id="picbtn1">Save: </label>
+      <button id="picbtn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          width="48"
+          id="artpics"
+        >
+          <path
+            d="M5 38q-1.2 0-2.1-.9Q2 36.2 2 35V13q0-1.2.9-2.1.9-.9 2.1-.9h22q1.2 0 2.1.9.9.9.9 2.1v22q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h22V13H5v22Zm2.8-4.85h16.25l-5-6.65L14.8 29l-3-4.1ZM35 38V10h3v28Zm8 0V10h3v28ZM5 35V13v22Z"
+          />
+        </svg>
+      </button>
+    </section>
+    <script src="main.js"></script>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
+</html>
