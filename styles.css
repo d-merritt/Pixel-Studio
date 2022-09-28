@@ -14,7 +14,7 @@ body {
 }
 
 #colorpalette {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   display: absolute;
   fill-opacity: 1;
   stroke: none;
@@ -34,11 +34,11 @@ body {
 @keyframes mymove {
   from {
     stroke-dashoffset: 3000;
-    fill: #bc6c25
+    fill: #bc6c25;
   }
   to {
     stroke-dashoffset: 0;
-    fill: #457b9d
+    fill: #457b9d;
   }
 }
 
@@ -91,7 +91,6 @@ body {
 
 .grid-items {
   background-color: #adb5bd;
-
 }
 
 #colorpicker {
@@ -107,8 +106,8 @@ body {
 }
 
 #colorpicker1 {
-margin-left: -15px;
-margin-right: 3px;
+  margin-left: -15px;
+  margin-right: 3px;
 }
 
 #colorpicker::-webkit-color-swatch {
@@ -143,11 +142,21 @@ margin-right: 3px;
   padding: 2rem;
   background-color: #adb5bd;
   -webkit-text-stroke: 2.5px white;
+  display: block;
+  position: relative;
+}
+
+#eraser {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 #btntext {
-padding-left: 28px;
-margin-right: -16px;
+  padding-left: 28px;
+  margin-right: -16px;
 }
 
 #picbtn {
@@ -157,12 +166,13 @@ margin-right: -16px;
   height: 45px;
   padding: 2rem;
   background-color: #adb5bd;
-
+  display: block;
+  position: relative;
 }
 
 #picbtn1 {
-padding-left: 28px;
-padding-right: 15px;
+  padding-left: 28px;
+  padding-right: 15px;
 }
 
 #btn:hover {
@@ -179,4 +189,9 @@ padding-right: 15px;
 
 #artpics {
   fill: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 9px;
+  left: 8px;
 }

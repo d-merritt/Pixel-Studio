@@ -26,6 +26,7 @@
       <svg
         id="colorpalette"
         xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/2000/svg"
         height="48"
         width="48"
       >
@@ -46,12 +47,27 @@
       <label for="gridnum" id="gridnumtext">Grid: </label>
       <input type="number" id="gridnum" name="gridnum" value="40" />
       <label for="btn" id="btntext">Clear:</label>
-      <button id="btn"><i class="fa-solid fa-eraser fa-3x"></i></button>
+      <button id="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewbox="0 0 576 512"
+          id="eraser"
+          height="40"
+          width="40"
+          stroke="#b0d0e0"
+          stroke-width="28"
+        >
+          <path
+            d="M290.7 57.4L57.4 290.7c-25 25-25 65.5 0 90.5l80 80c12 12 28.3 18.7 45.3 18.7H288h9.4H512c17.7 0 32-14.3 32-32s-14.3-32-32-32H387.9L518.6 285.3c25-25 25-65.5 0-90.5L381.3 57.4c-25-25-65.5-25-90.5 0zM297.4 416H288l-105.4 0-80-80L227.3 211.3 364.7 348.7 297.4 416z"
+          />
+        </svg>
+      </button>
 
       <label for="artpics" id="picbtn1">Save: </label>
       <button id="picbtn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/2000/svg"
           height="48"
           width="48"
           id="artpics"
