@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "dom-to-image": "^2.6.0",
-    "start": "node index.js"
+    "dom-to-image": "^2.6.0"
   }
 }
